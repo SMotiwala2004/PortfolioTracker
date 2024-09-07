@@ -1,0 +1,49 @@
+.information {
+  
+}
+
+
+.AuthForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 75%;
+  width: 80vw;
+  height: 45vh;
+  border: 10px solid black;
+  border-radius: 50px;
+  background-color: rgba(48, 47, 47, 0.447);
+}
+
+input#email, input#password, button#Login {
+  /*Co-joined styling*/
+  display: flex;
+  margin-bottom: 10%;
+} 
+
+input#email, input#password {
+  width: 250px;
+  height: 25%;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgba(27, 27, 27, 0.395);
+  border: 5px solid black;
+  padding-left: 20px;
+  border-radius: 25px;
+}
+
+button#Login {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(1, 207, 248, 0.827);
+  border: 5px solid black;  height: 25%;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 24px;
+
+}

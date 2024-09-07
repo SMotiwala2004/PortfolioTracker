@@ -1,0 +1,30 @@
+:root {
+  font-family: Tahoma, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #cdc7c739;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.appName {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background: rgba(1, 207, 248, 0.827);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 3px solid white;
+}
