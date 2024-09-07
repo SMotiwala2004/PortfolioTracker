@@ -42,7 +42,9 @@ function App() {
   return (
     <>
     <div className='information'>
-      <p>ⓘ Sign in with your Robinhood credentials<br/>to allow access to your Robinhood portfolio</p>
+      <p id="info">ⓘ Sign in with your Robinhood credentials to allow access to your Robinhood portfolio</p>
+      <p id = "info">ⓘ The account is only accessed once and the information is not stored.</p>
+      <p id="info">ⓘ All rights are reserved to Robinhood</p>
     </div>
     <div className="AuthForm">
       <form>
