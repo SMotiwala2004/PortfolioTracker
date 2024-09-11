@@ -28,7 +28,7 @@ function App() {
     .then(response => { 
       setStatus(response.data.status);
       setHasError(response.data.status !== 'Login Successful');
-      navigate('/Profile')
+      navigate('/Profile');
       
   })
     .catch(error => {

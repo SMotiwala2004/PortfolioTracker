@@ -1,3 +1,47 @@
 h1 {
+    text-align: center;
     color: white;
+}
+
+
+ul#watchList {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+li#watchListItem {
+    border: 3px solid rgba(1, 207, 248, 0.827);
+    border-radius: 5px;
+    background: rgba(1, 207, 248, 0.123);;
+    list-style-type: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+}
+.watchListLink { 
+    text-decoration: none;
+    color: inherit;
+}
+.watchListLink:visited {
+    color: white;
+}
+
+button#logoutBtn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    background-color: rgba(1, 207, 248, 0.827);
+    border: 5px solid black; 
+    border-radius: 25px; 
+    width: 200px;
+    height: 75px;
 }
