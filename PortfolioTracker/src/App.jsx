@@ -41,30 +41,34 @@ function App() {
 
   return (
     <>
-    <div className='information'>
-      <p id="info">ⓘ Sign in with your Robinhood credentials to allow access to your Robinhood portfolio</p>
-      <p id = "info">ⓘ The account is only accessed once and the information is not stored.</p>
-      <p id="info">ⓘ All rights are reserved to Robinhood</p>
-    </div>
-    <div className="AuthForm">
-      <form>
-        <input id='email'
-        type='email'
-        placeholder='Email'
-        value = {username}
-        onChange={e => setUsername(e.target.value)}>
-        </input>
-        <input id='password'
-        type='password'
-        placeholder='Password'
-        value={password}
-        onChange={e => setPassword(e.target.value)}>
-        </input>
-        <button id = 'Login'
-        onClick={handleLogin}
-        >Login
-        </button>
-      </form>
+    <div className='loginForm'>
+      <div className='information'>
+        <p id="info">ⓘ Sign in with your Robinhood credentials to allow access to your Robinhood portfolio</p>
+        <p id = "info">ⓘ The account is only accessed once and the information is not stored.</p>
+        <p id="info">ⓘ All rights are reserved to Robinhood</p>
+      </div>
+      <div className='authContainer'>
+        <div className="AuthForm">
+          <form>
+            <input id='email'
+            type='email'
+            placeholder='Email'
+            value = {username}
+            onChange={e => setUsername(e.target.value)}>
+            </input>
+            <input id='password'
+            type='password'
+            placeholder='Password'
+            value={password}
+            onChange={e => setPassword(e.target.value)}>
+            </input>
+            <button id = 'Login'
+            onClick={handleLogin}
+            >Login
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
     </>
   )

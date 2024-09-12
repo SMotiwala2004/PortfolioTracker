@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
+import './details.css'; 
 
 function Details() {
     const { listName } = useParams();
@@ -39,15 +40,17 @@ function Details() {
 
     return (
         <>
-            <div key="list-component">
-                <h1 id='list-content'>List Content</h1>
+        <h1 id='list-content'>{listName} Content</h1>
+        <div className="container">
                 {data.length > 0 ? (
                     <div className="List">
                         <ul id='List'>
+                            <span id='listHeader'>Items in your watchlist</span>
                             {data.map((item, index) => (
                                 <li id='ListItem' key={index}>
-                                    <div>
-                                        {item.symbol} - {item.name}
+                                    <div className="stockDetails">
+                                        <span id='stockSymbol'>{item.symbol} -&nbsp;</span>
+                                        <span id='stockName'>{item.name}</span>
                                     </div>
                                 </li>
                             ))}
@@ -56,12 +59,36 @@ function Details() {
                 ) : (
                     <p>No items in your list</p>
                 )}
-            </div>
-            <div className="logout-Button">
-                <button id='logoutBtn' onClick={handleLogout}>Logout</button>
-                {status && <p className={error ? 'error' : 'success'}>{status}</p>}
-            </div>
-        </>
+                {data.length > 0 ? (
+                    <div className="holdingList">
+                        <ul id='List'>
+                            <span id='listHeaderHolding'>Holdings in your list</span>
+                            {data.some(item => item.holding === true) ? (
+                                data.map((item, index) => (
+                                    item.holding === true && (
+                                        <li id="holdingItem" key={index}>
+                                            <div className="holdingSymbol">
+                                             <span id="holdingSymbol">{item.symbol}</span>
+                                             <span id="price">{item.price}</span>
+                                            </div>
+                                        </li>
+                                    )
+                                ))
+                            ) : (
+                                <p>No Holdings in your list</p>
+                            )}
+                        </ul>
+                    </div>
+                ) : (
+                    <p>No Holdings in your list</p>
+                )}
+        </div>
+    
+        <div className="logout-Button">
+            <button id='logoutBtn' onClick={handleLogout}>Logout</button>
+            {status && <p className={error ? 'error' : 'success'}>{status}</p>}
+        </div>
+    </>
     );
 }
 

@@ -1,11 +1,32 @@
+.loginForm {
+  display: block;
+  margin: auto;
+  margin-top: 5vh;
+  padding-top: 50px;
+  background-color: white;
+  width: 90vw;
+  height: 75vh;
+  border-radius: 0px;
+  box-shadow: 0 0 150px black;
+  
+}
+
+.authContainer {
+  background-color: rgb(8, 66, 78);
+  padding-bottom: 30px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-top: 30px;
+  margin-top: 10vh;
+}
+
 .information {
   width: 80vw;
   height: 15vh;
   margin: auto;
-  margin-top: 5%;
-  border: 5px solid red;
+  border: 5px solid rgba(108, 11, 11, 0.65);
   border-radius: 50px;
-  background: rgba(255, 64, 64, 0.387);
+  background: rgba(229, 8, 8, 0.387);
   padding-left: 25px;
 }
 
@@ -20,12 +41,12 @@ p#info {
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 5vh;
-  width: 80vw;
+  width: 35vw;
   height: 45vh;
-  border: 10px solid black;
+  border: 5px solid black;
   border-radius: 50px;
-  background-color: rgba(48, 47, 47, 0.447);
+  box-shadow: 0px 10px 20px black;
+  background-color: rgba(48, 47, 47);
 }
 
 input#email, input#password, button#Login {
@@ -51,10 +72,10 @@ button#Login {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgba(1, 207, 248, 0.827);
+  background-color: rgba(1, 207, 248, 0.468);
   border: 5px solid black;  
-  height: 25%;
-  border-radius: 25px;
+  height: 40%;
+  border-radius: 10px;
   font-weight: bolder;
   font-size: 24px;
 

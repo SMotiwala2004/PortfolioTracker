@@ -11,7 +11,7 @@ function Main() {
     <>
     <div className='appName'>
         <header>
-          <h1 id='appName'>PortfolioTracker</h1>
+          <h1 id='appName'>RobinTracked</h1>
         </header>
       </div>
     <Router>
